@@ -1,10 +1,11 @@
 import Square from './Square';
 
-const Board = ({ Squares, handleSquareClick }) => {
+// eslint-disable-next-line react/prop-types
+const Board = ({ squares, handleSquareClick }) => {
   const renderSquare = position => {
     return (
       <Square
-        value={Squares[position]}
+        value={squares[position]}
         onClick={() => handleSquareClick(position)}
       />
     );
